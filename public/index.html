@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="lt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101817">
+  <title>Klubas — treniruočių rezervacijos</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="/"><span class="brand-mark">K</span><span>klubas<span class="brand-dot">.</span></span></a>
+    <span class="topbar-note"><i class="live-dot"></i> Rezervacijų sistema</span>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy"><p class="eyebrow">JUDĖK SAVO RITMU</p><h1>Tavo kita<br><span>treniruotė.</span></h1><p class="hero-sub">Rask vietą. Rezervuok. Susitinkam salėje.</p></div>
+      <div class="hero-stamp"><span>01</span><small>REZERVUOK<br>SAVO VIETĄ</small></div>
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+    </section>
+    <section class="controls" aria-label="Klubo ir nario pasirinkimas">
+      <label>KLUBAS<select id="club-select"></select></label>
+      <label>NARYS<select id="member-select"></select></label>
+      <span class="privacy-note"><span class="lock-icon">◆</span> Klubo duomenys atskirti</span>
+    </section>
+    <section class="section-heading"><div><p class="eyebrow">SAVAITĖS GRAFIKAS</p><h2>Pasirink treniruotę</h2></div><span id="class-count" class="count-pill"></span></section>
+    <div id="notice" class="notice" role="status" hidden></div>
+    <section id="training-list" class="training-list" aria-live="polite"></section>
+    <footer><span>KLUBAS<span class="brand-dot">.</span> REZERVACIJOS</span><span>PROTOTIPAS · 2026</span></footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
